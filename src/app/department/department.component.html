@@ -1,9 +1,9 @@
-<div class="nav-scroller py-1 mb-2">
+<div class="nav-scroller py-1 mb-2" id="nav-bar-department">
     <nav class="nav d-flex justify-content-between">
         <div style="display:flex">
-        <a class="p-2 text-muted" href="#">List</a>
-        <a class="p-2 text-muted" href="#">Add</a>
-        <a class="p-2 text-muted" href="#">Edit</a>
+        <a class="p-2 text-muted active" data-menu-nav="LIST" href="#">List</a>
+        <a class="p-2 text-muted" data-menu-nav="ADD" href="#">Add</a>
+        <a class="p-2 text-muted" data-menu-nav="EDIT" href="#">Edit</a>
         </div>
     </nav>
 </div>
@@ -16,6 +16,7 @@
     </div>
 </div>
 
+<div id="outlet-department">
 <div id="list-department-wrapper">
 <div class="row mb-2">
     <div class="col-md-6">
@@ -25,7 +26,7 @@
                 <h3 class="mb-0">Computer Science</h3>
                 <div class="mb-1 text-muted"></div>
                 <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores aspernatur, consequatur, culpa dolore ex explicabo labore minima nam nemo neque officiis quas quidem rem sequi sint vero voluptatem!</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <a href="#" data-menu-dep="CS" class="stretched-link">Continue reading</a>
             </div>
             <div class="col-auto d-none d-lg-block">
                 <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -39,7 +40,7 @@
                 <h3 class="mb-0">Business Studies</h3>
                 <div class="mb-1 text-muted"></div>
                 <p class="mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque eius et excepturi exercitationem id iure molestias porro voluptatem. Architecto delectus dignissimos doloribus expedita in porro quia quos. Dicta, ex!</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <a href="#" data-menu-dep="BS" class="stretched-link">Continue reading</a>
             </div>
             <div class="col-auto d-none d-lg-block">
                 <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -56,7 +57,7 @@
                 <h3 class="mb-0">Fashion Design</h3>
                 <div class="mb-1 text-muted"></div>
                 <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eius eum eveniet facilis hic id incidunt laudantium, maiores minima optio quos recusandae sed similique sunt, tempora. Nobis quam vero voluptatibus.</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <a href="#" data-menu-dep="FD" class="stretched-link">Continue reading</a>
             </div>
             <div class="col-auto d-none d-lg-block">
                 <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -70,7 +71,7 @@
                 <h3 class="mb-0">Mechatronics</h3>
                 <div class="mb-1 text-muted"></div>
                 <p class="mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus distinctio odio possimus, praesentium quos rerum velit? Earum maxime necessitatibus quaerat! Accusamus accusantium blanditiis consequuntur cupiditate fugiat fugit odit quibusdam!</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <a href="#" data-menu-dep="MECH" class="stretched-link">Continue reading</a>
             </div>
             <div class="col-auto d-none d-lg-block">
                 <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -87,7 +88,7 @@
                 <h3 class="mb-0">Electrical</h3>
                 <div class="mb-1 text-muted"></div>
                 <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum delectus dolor esse facere ipsum magni necessitatibus nisi odit possimus quaerat quasi quo quos recusandae reiciendis repellendus, temporibus, ut, vel?</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <a href="#" data-menu-dep="EE" class="stretched-link">Continue reading</a>
             </div>
             <div class="col-auto d-none d-lg-block">
                 <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -101,7 +102,7 @@
                 <h3 class="mb-0">Zoology</h3>
                 <div class="mb-1 text-muted"></div>
                 <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <a href="#" data-menu-dep="ZOO" class="stretched-link">Continue reading</a>
             </div>
             <div class="col-auto d-none d-lg-block">
                 <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -111,22 +112,43 @@
 </div>
 </div>
 
-<div id="add-department-wrapper">
+<div id="add-department-wrapper" class="d-none">
 <!--todo: add form for add departments-->
     <h2>lets add a department</h2>
 </div>
 
-<div id="edit-department-wrapper">
+<div id="edit-department-wrapper" class="d-none">
     <!--todo: edit form-->
     <h2>lets edit some departments</h2>
 </div>
 
-<div id="department-computer-science">
+<div id="department-computer-science" class="d-none">
     <!--todo: add content to department description-->
     <h2>department of computer science</h2>
 </div>
 
-<div id="department-business-studies">
+<div id="department-business-studies" class="d-none">
     <!--todo: add content do department of business studies-->
     <h2>department of business studies</h2>
+</div>
+
+    <div id="department-fashion-design" class="d-none">
+        <!--todo: add content to department description-->
+        <h2>department of Fashion Design</h2>
+    </div>
+
+    <div id="department-mechatronics" class="d-none">
+        <!--todo: add content do department of mechatronics-->
+        <h2>department of Mechatronics</h2>
+    </div>
+
+    <div id="department-electrical" class="d-none">
+        <!--todo: add content to department description-->
+        <h2>department of Electrical</h2>
+    </div>
+
+    <div id="department-zoology" class="d-none">
+        <!--todo: add content do department of zoology-->
+        <h2>department of Zoology</h2>
+    </div>
 </div>
