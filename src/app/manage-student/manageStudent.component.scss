@@ -1,0 +1,39 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+#MainPage{
+  padding-top: 20px;
+  animation-name: slider;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  transition-property: all;
+  transition-duration: 2s;
+}
+@keyframes slider {
+  0%{
+    background: url("../../assets/img/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  25%{
+    background: url("../../assets/img/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50%{
+    background: url("../../assets/img/background3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  75%{
+    background: url("../../assets/img/background4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100%{
+    background: url("../../assets/img/background5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

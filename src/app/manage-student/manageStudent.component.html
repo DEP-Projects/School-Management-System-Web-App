@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manage Student</title>
+</head>
+<body>
+<div id="MainPage">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-light">Student Management</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Student Management</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!--Add Student start here-->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <div class="row justify-content-end">
+                <div class="col-lg-3 col-12 text-center">
+                    <!-- small box -->
+                    <div id="btnAddStudent" class="small-box bg-info">
+                        <div class="icon">
+                            <i class="fas fa-users fa-3x"></i>
+                        </div>
+                        <div class="inner">
+                            <p class="h3">Add New Student</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./col -->
+            </div>
+            <!-- /.row -->
+            <!-- Main row -->
+            <div class="row">
+            </div>
+            <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+
+    </section>
+    <!--Add Student end here-->
+    <!--All Student Section Start Here-->
+    <div id="AllStudent" class="content-wrapper">
+        <!-- Main content -->
+        <div class="dashboard-content-one" style="margin: 10px">
+            <!-- Teacher Table Area Start Here -->
+            <div class="card height-auto">
+                <div class="card-body">
+                    <div class="heading-layout1">
+                        <div class="item-title">
+                            <h3>All Students Data</h3>
+                        </div>
+                        <div class="dropdown d-flex justify-content-end">
+                            <a class="dropdown-toggle" href="#" role="button"
+                               data-toggle="dropdown" aria-expanded="false">...</a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i class="fas fa-times-circle text-danger pr-3"></i>Close</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt pr-3"></i>Refresh</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="mg-b-20">
+                        <div class="row gutters-8">
+                            <div class="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                <input type="text" placeholder="Search by ID ..." class="form-control">
+                            </div>
+                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                                <input type="text" placeholder="Search by Name ..." class="form-control">
+                            </div>
+                            <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                <input type="text" placeholder="Search by Phone ..." class="form-control">
+                            </div>
+                            <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                                <button type="submit" class="fw-btn-fill btn btn-success">SEARCH</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="table-responsive">
+                        <table class="table display data-table text-nowrap">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input checkAll">
+                                        <label class="form-check-label">ID</label>
+                                    </div>
+                                </th>
+                                <th>Photo</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Section</th>
+                                <th>Address</th>
+                                <th>Phone</th>
+                                <th>E-mail</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">#0001</label>
+                                    </div>
+                                </td>
+                                <td class="text-center"><img src="../../assets/img/student2.png" alt="student"></td>
+                                <td>Tharanga Mahavila</td>
+                                <td>Male</td>
+                                <td>Accounting</td>
+                                <td>Ahangama,Galle</td>
+                                <td>077-7215112</td>
+                                <td>tharangamahavila@gmail.com</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            <span class="flaticon-more-button-of-three-dots"></span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#"><i class="fas fa-trash text-orange-red pr-3"></i>Delete</a>
+                                            <a class="dropdown-item" href="#"><i class="fas fa-user-edit text-dark-pastel-green pr-3"></i>Edit</a>
+                                            <a id="viewDetail" class="dropdown-item" href="#"><i class="fas fa-info-circle text-orange-peel pr-3"></i>View Details</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Teacher Table Area End Here -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!--All Student Section end here-->
+    <!--Add Student Section start here-->
+    <div id="AddStudent" class="content-wrapper d-none">
+        <!-- Main content -->
+        <div class="card height-auto" style="margin: 10px">
+            <div class="card-body">
+                <div class="heading-layout1">
+                    <div class="item-title">
+                        <h3>Add New Student</h3>
+                    </div>
+                    <div class="dropdown d-flex justify-content-end">
+                        <a class="dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-expanded="false">...</a>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="new-added-form">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>First Name *</label>
+                            <input id="txtFirstName" type="text" placeholder="" class="form-control">
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>Last Name *</label>
+                            <input id="txtLastName" type="text" placeholder="" class="form-control">
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>Gender *</label>
+                            <select id="comboGender" class="select2">
+                                <option value="">Please Select Gender *</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Others</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>Date Of Birth *</label>
+                            <input id="txtBirthdate" type="date" placeholder="dd/mm/yyyy" class="form-control air-datepicker">
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>ID No</label>
+                            <input id="txtId" type="text" placeholder="" class="form-control">
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>Religion *</label>
+                            <select id="comboReligion" class="select2">
+                                <option selected disabled value="">Please Select Religion *</option>
+                                <option value="1">Islam</option>
+                                <option value="2">Hindu</option>
+                                <option value="3">Christian</option>
+                                <option value="3">Buddish</option>
+                                <option value="3">Others</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>E-Mail</label>
+                            <input id="txtEmail" type="email" placeholder="" class="form-control">
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>Section</label>
+                            <input id="txtSection" type="text" placeholder="" class="form-control">
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>Address</label>
+                            <input id="txtAddress" type="text" placeholder="" class="form-control">
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-12 form-group">
+                            <label>Phone</label>
+                            <input id="txtPhone" type="text" placeholder="" class="form-control">
+                        </div>
+                        <div class="col-lg-6 col-12 form-group mg-t-30">
+                            <label class="text-dark-medium">Upload Customer Photo (150px X 150px)</label>
+                            <div style="height: 150px; width: 150px;background-color: lightgray; margin: 20px;"></div>
+                            <input type="file" class="form-control-file">
+                        </div>
+                        <div class="col-12 form-group mg-t-8">
+                            <button id="btnSubmit" style="width: 100px;height: 40px; border-radius: 10px;" type="submit" class="btn-fill-lg btn-success btn-hover-bluedark">Save</button>
+                            <button style="width: 100px;height: 40px; border-radius: 10px;" type="reset" class="btn-fill-lg btn-dark btn-hover-yellow">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.content -->
+    </div>
+    <!--Add student section end here-->
+    <!--Student Detail Section Start here-->
+    <div id="StudentDetail" class="content-wrapper d-none">
+        <!-- Main content -->
+        <div class="card height-auto" style="margin: 10px">
+            <div class="card-body">
+                <div class="heading-layout1">
+                    <div class="item-title">
+                        <h3>About Me</h3>
+                    </div>
+                    <div class="dropdown d-flex justify-content-end">
+                        <a class="dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-expanded="false">...</a>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><i class="fas fa-times text-danger pr-3"></i>Close</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-edit text-dark-pastel-green pr-3"></i>Edit</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel pr-3"></i>Refresh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-info-details" style="display: flex">
+                    <div class="item-img">
+                        <img src="../../assets/img/teacher.jpg" alt="teacher">
+                    </div>
+                    <div class="item-content" style="margin: 0 0 0 10px">
+                        <div class="header-inline item-header" style="display: flex; justify-content: space-between;">
+                            <h3 class="text-dark-medium font-medium text-bold">Tharanga Mahavila</h3>
+                            <div class="header-elements">
+                                <ul>
+                                    <li style="display: inline; margin: 10px"><a href="#"><i class="far fa-edit"></i></a></li>
+                                    <li style="display: inline;margin: 10px"><a href="#"><i class="fas fa-print"></i></a></li>
+                                    <li style="display: inline; margin: 10px"><a href="#"><i class="fas fa-download"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-secondary" style="text-align: justify">Aliquam erat volutpat. Curabiene natis massa sedde lacu stiquen sodale
+                            word moun taiery.Aliquam erat volutpaturabiene natis massa sedde  sodale
+                            word moun taiery. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorum eligendi,
+                            harum nihil odit sequi! Architecto, assumenda corporis cupiditate excepturi, harum itaque non
+                            obcaecati odit omnis perferendis porro repellat sed.</p>
+                        <div class="info-table table-responsive">
+                            <table class="table text-nowrap">
+                                <tbody>
+                                <tr>
+                                    <td class="text-secondary">Name:</td>
+                                    <td class="font-medium text-dark-medium text-bold">Tharanga Mahavila</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">Gender:</td>
+                                    <td class="font-medium text-dark-medium text-bold">Male</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">Religion:</td>
+                                    <td class="font-medium text-dark-medium text-bold">Buddhism</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">Joining Date:</td>
+                                    <td class="font-medium text-dark-medium text-bold">01.10.2020</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">E-mail:</td>
+                                    <td class="font-medium text-dark-medium text-bold">tharangamahavila@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">Section:</td>
+                                    <td class="font-medium text-dark-medium text-bold">Accounting</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">ID No:</td>
+                                    <td class="font-medium text-dark-medium text-bold">0001</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">Address:</td>
+                                    <td class="font-medium text-dark-medium text-bold">Ahangama,Galle</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">Phone:</td>
+                                    <td class="font-medium text-dark-medium text-bold">077-7215112</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.content -->
+    </div>
+    <!--Student Detail Section end here-->
+</div>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- <script src="../../../node_modules/admin-lte/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../../node_modules/admin-lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../../node_modules/admin-lte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../../node_modules/admin-lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>-->
+</body>
+</html>
