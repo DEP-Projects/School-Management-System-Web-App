@@ -1,5 +1,5 @@
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper" id="coursesMain">
     <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
@@ -74,9 +74,12 @@
                                     <span class="info-box-text">Direct Entry Program</span>
                                     <span class="info-box-number">25</span>
                                 </div>
-                                <a href="#" class="info-box-footer">
-                                    More info <i class="fas fa-arrow-circle-right"></i>
-                                </a>
+                                <div class="info-box-footer">
+                                    <a href="#">
+                                        More info <i class="fas fa-arrow-circle-right"></i>
+                                    </a>
+                                    <span class="info-box-text">Sura-Boy</span>
+                                </div>
                             </div>
                         </div>
                         <!-- /.card-body -->
@@ -89,4 +92,89 @@
     </section>
     <!-- /.content -->
 </div>
+
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper d-none" id="courseDetails">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Course Details</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Courses</a></li>
+                        <li class="breadcrumb-item active">Course Details</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-dark">
+                        <div class="card-header">
+                            <h3 class="card-title" style="font-size: 30px">Enrolled Students</h3>
+
+                            <div class="card-tools">
+
+                                <button type="button" class="btn btn-block bg-white">
+                                    <i class="fas fa-plus mr-2"></i>Add Student</button>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0" style="height: 300px;">
+                            <table class="table table-head-fixed text-nowrap table-hover">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Date of Registered</th>
+                                    <th>Assingment Submission</th>
+                                    <th>Payment</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Danuka</td>
+                                    <td>01-09-2020</td>
+                                    <td>
+                                        <div class="progress progress-xs align-center">
+                                            <div class="progress-bar progress-bar-danger" style="width: 75%"></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-success">100%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>Lucky</td>
+                                    <td>01-09-2020</td>
+                                    <td>
+                                        <div class="progress progress-xs align-center">
+                                            <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-success">100%</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
 
