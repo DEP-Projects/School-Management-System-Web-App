@@ -24,7 +24,7 @@ body {
 }
 .header_bg1 {
   border-top:8px groove #3b3b3b;
-  background: url('../assets/3.jpg') no-repeat  left;
+  background: url('../assets/nav-header.jpg') no-repeat  left;
   background-size: 100%;
 }
 .header{
@@ -132,22 +132,16 @@ body {
 }
 .footer{
   padding: 4%;
+  height: 25px;
 }
 .copy p{
   color: #3b3b3b;
   font-size: 14px;
   line-height: 1.8em;
+
 }
 .copy p a{
   color:#ff5454;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.copy p a:hover{
-  color: #3b3b3b;
-  text-decoration: none;
 }
 .details img{
   margin-bottom: 20px;

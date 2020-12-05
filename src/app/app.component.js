@@ -9,5 +9,20 @@ $("app-root").replaceWith('<div id="app">'+app+ '</div>');
 var stylesheet = '<style>' +style + '</style>';
 $('#app').append(stylesheet);
 
+/*header and carousel*/
+$(".nav-link").click(function (){
+    if($(this).hasClass("general")){
+       $("#header").removeClass("header_bg1");
+       $("#carouselExampleFade").show();
+    }else{
+        $("#header").addClass("header_bg1");
+        $("#carouselExampleFade").hide();
+    }
+});
 
+/*Navgiate activation*/
+$(".nav-item").click(function (){
+    $(".nav-item").removeClass("active")
+    $(this).addClass("active");
+});
 
