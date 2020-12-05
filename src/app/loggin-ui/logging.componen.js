@@ -1,4 +1,4 @@
-import './logging.component.html'
+
 
 import logging from './logging.component.html';
 import style from './logging.component.scss';
