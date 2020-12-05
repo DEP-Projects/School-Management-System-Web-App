@@ -38,7 +38,40 @@ $("#btnSubmit").on('click',function (){
     var phone=$("#txtPhone").val();
 
     studentArray.push(getStudentObject(name,gender,religion,joining_date,email,section,id,address,phone));
+    getAllStudent();
 });
+function getAllStudent(){
+    for (const studentArrayElement of studentArray) {
+        var newStudent='<tr>\n' +
+            '                                <td>\n' +
+            '                                    <div class="form-check">\n' +
+            '                                        <input type="checkbox" class="form-check-input">\n' +
+            '                                        <label class="form-check-label">#'+studentArrayElement.id+'</label>\n' +
+            '                                    </div>\n' +
+            '                                </td>\n' +
+            '                                <td class="text-center"><img src="'+"../../assets/img/student3.png"+'" alt="student"></td>\n' +
+            '                                <td>'+studentArrayElement.name+'</td>\n' +
+            '                                <td>'+studentArrayElement.gender+'</td>\n' +
+            '                                <td>'+studentArrayElement.section+'</td>\n' +
+            '                                <td>'+studentArrayElement.address+'</td>\n' +
+            '                                <td>'+studentArrayElement.phone+'</td>\n' +
+            '                                <td>'+studentArrayElement.email+'</td>\n' +
+            '                                <td>\n' +
+            '                                    <div class="dropdown">\n' +
+            '                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">\n' +
+            '                                            <span class="flaticon-more-button-of-three-dots"></span>\n' +
+            '                                        </a>\n' +
+            '                                        <div class="dropdown-menu dropdown-menu-right">\n' +
+            '                                            <a class="dropdown-item" href="#"><i class="fas fa-trash text-orange-red pr-3"></i>Delete</a>\n' +
+            '                                            <a class="dropdown-item" href="#"><i class="fas fa-user-edit text-dark-pastel-green pr-3"></i>Edit</a>\n' +
+            '                                            <a id="viewDetail" class="dropdown-item" href="#"><i class="fas fa-info-circle text-orange-peel pr-3"></i>View Details</a>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                </td>\n' +
+            '                            </tr>'
+        $("tbody").append(nnewStudent);
+    }
+}
 
 $("#btnAddStudent").on('click',function (){
    if($("#btnAddStudent p").text()=='Add New Student'){

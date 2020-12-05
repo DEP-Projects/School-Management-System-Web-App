@@ -4,9 +4,10 @@
 
 #MainPage{
   padding-top: 20px;
-  animation-name: slider;
+  background-image: url("../../assets/img/background3.jpg");
+  /*animation-name: slider;
   animation-duration: 50s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;*/
   transition-property: all;
   transition-duration: 2s;
 }
@@ -36,4 +37,9 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
+#AllStudent .card, #AddStudent .card, #StudentDetail .card{
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  /*background-color: yellow;*/
 }
