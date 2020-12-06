@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import app from './app.component.html';
 import style from './app.component.scss';
 
@@ -47,5 +45,4 @@ $(".nav-item").click(function (){
     }
 });
 
->>>>>>> origin/master
 
