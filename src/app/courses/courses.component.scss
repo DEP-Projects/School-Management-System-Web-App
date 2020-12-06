@@ -1,0 +1,25 @@
+
+.card{
+  height: 400px;
+}
+
+.pagination{
+  justify-content: flex-end;
+}
+
+.info-box-number{
+  font-size: 18px;
+}
+
+.table{
+  tr{
+    th:last-child, td:last-child{
+      width: 10%;
+    }
+  }
+}
+
+.content-wrapper{
+  margin-left: 0 !important;
+  margin-bottom: 0px !important;
+}
