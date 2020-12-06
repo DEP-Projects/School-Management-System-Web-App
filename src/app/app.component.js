@@ -29,7 +29,18 @@ $(".nav-link").click(function (){
 $(".nav-item").click(function (){
     $(".nav-item").removeClass("active")
     $(this).addClass("active");
-    
+    $("#app #main").removeClass('d-none');
+    $("#app #main>div").addClass("d-none");
+    switch ($(this).attr("data-menu")) {
+        case "GENERAL":
+            $("#app #main").addClass('d-none');
+            break;
+        case "COURSES":
+            $("#courses").removeClass("d-none");
+            break;
+        default:
+            break;
+    }
 });
 
 
