@@ -1,4 +1,4 @@
 
-import './app.component.js';
-import './courses/courses.component';
+// import './app.component.js';
+// import './courses/courses.component';
 
