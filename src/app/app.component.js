@@ -40,6 +40,8 @@ $(".nav-item").click(function (){
         case "STUDENT":
             $("#manageStudent").removeClass("d-none");
             break;
+            case "DEPARTMENT":
+                $("#department").removeClass("d-none");
         default:
             break;
     }
