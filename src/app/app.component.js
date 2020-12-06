@@ -5,7 +5,6 @@ import "../../node_modules/jquery/dist/jquery.min.js";
 import "../../node_modules/bootstrap/dist/js/bootstrap.js";
 import "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
-import '../../node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js';
 import '../../node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js';
 import '../../node_modules/admin-lte/dist/js/adminlte.js';
 
@@ -37,6 +36,9 @@ $(".nav-item").click(function (){
             break;
         case "COURSES":
             $("#courses").removeClass("d-none");
+            break;
+        case "STUDENT":
+            $("#manageStudent").removeClass("d-none");
             break;
         default:
             break;
