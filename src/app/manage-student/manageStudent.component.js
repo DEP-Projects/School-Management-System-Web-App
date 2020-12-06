@@ -2,8 +2,10 @@
 import '../../../node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js';
 import '../../../node_modules/admin-lte/dist/js/adminlte.js'; */
 
+
 import manageStudent from './manageStudent.component.html';
 import style from './manageStudent.component.scss';
+import swal from 'sweetalert';
 
 $("app-manageStudent").replaceWith('<div id="manageStudent">'+manageStudent+'</div>');
 var html = '<style>'+style+'</style>';
@@ -38,11 +40,14 @@ $("#btnSubmit").on('click',function (){
     var phone=$("#txtPhone").val();
 
     studentArray.push(getStudentObject(name,gender,religion,joining_date,email,section,id,address,phone));
+    swal("Successful!", "You added a new Student!", "success");
+    $("#AddStudent").addClass('d-none');
+    $("#AllStudent").removeClass('d-none');
     getAllStudent();
 });
 function getAllStudent(){
     for (const studentArrayElement of studentArray) {
-        var newStudent='<tr>\n' +
+        var newStudent='<tr class="text-bold">\n' +
             '                                <td>\n' +
             '                                    <div class="form-check">\n' +
             '                                        <input type="checkbox" class="form-check-input">\n' +
@@ -69,7 +74,7 @@ function getAllStudent(){
             '                                    </div>\n' +
             '                                </td>\n' +
             '                            </tr>'
-        $("tbody").append(nnewStudent);
+        $("tbody").append(newStudent);
     }
 }
 
