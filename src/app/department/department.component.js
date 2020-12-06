@@ -27,6 +27,7 @@ $("#nav-bar-department a").click(function (){
     }
 });
 
+/* navigation for department list */
 $("#list-department-wrapper a").click(function (){
     $("#outlet-department>div").addClass("d-none");
     switch ($(this).attr("data-menu-dep")){
